@@ -34,7 +34,7 @@ install.packages("devtools")
 
 Then install R/mbmixture using the `install_github` function in the
 [devtools](https://github.com/hadley/devtools) package. (With
-`build_vignettes=TRUE`, the vignettes will be built and installed.)
+`build_vignettes=TRUE`, the vignette will be built and installed.)
 
 ```r
 library(devtools)
