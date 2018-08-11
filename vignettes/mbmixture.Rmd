@@ -1,0 +1,105 @@
+---
+title: R/mbmixture User Guide
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R/mbmixture User Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8](inputenc)
+---
+
+```{r knitr_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.width=7, fig.height=4.5,
+               dev.args=list(pointsize=16))
+```
+
+
+R/mbmixture is an [R](https://www.r-project.org) package for
+evaluating whether a microbiome sample is the mixture of two source
+samples. We are thinking of shotgun sequencing data on the microbiome
+sample plus dense SNP genotype data on the two potential source
+samples. We assume that the data has been reduced to a
+three-dimensional array of read counts: the 3 possible SNP genotypes
+for the first sample &times; the 3 possible SNP genotypes of the
+second sample &times; the 2 possible SNP alleles on the reads.
+
+The data are very specific, and it fits a very specific model.
+
+It comes with a single example data set, `mbmixdata`. Let's load the
+package and the data.
+
+```{r load_lib_and_data}
+library(mbmixture)
+data(mbmixdata)
+```
+
+The data set is a three-dimensional array, 3&times;3&times;2, with
+read counts at SNPs broken down by the SNP genotype for the first
+sample, the SNP genotype for the second sample, and the SNP allele in
+the read. It seeks to fit a multinomial model with two parameters:
+_p_ is the "contaminant probability" (the proportion of the microbiome
+reads coming from the second sample), and _e_ is the sequencing error
+rate.
+
+Here's a view of the data:
+
+```{r print_data}
+mbmixdata
+```
+
+The function `mbmix_loglik` is not generally called by the user, but
+calculates the log likelihood for particular values of _p_ and _e_.
+
+```{r calc_loglik}
+mbmix_loglik(mbmixdata, p=0.74, e=0.002)
+```
+
+The function `mle_pe` is the key one. It obtains the MLEs of _p_ and
+_e_.
+
+```{r calc_mle}
+(mle <- mle_pe(mbmixdata))
+```
+
+So for these data, the estimate of _p_ is `round(mle["p"], 2)`,
+meaning that `round(mle["p"]*100)`% of the microbiome sample came from
+the second sample (and `round(100-mle["p"]*100)`% came from the first
+sample). The estimate of the sequencing error rate is `round(mle["e"],
+3)`.
+
+The `mle_pe()` function also returns likelihood ratio test statistics
+(twice the natural log of the likelihood ratio) for tests of _p=0_ and
+_p=1_. Here, they're both extremely large.
+
+If you use the argument `SE=TRUE`, you'll get estimated standard
+errors as an attribute.
+
+```{r calc_mle_with_ses}
+(mle_w_SE <- mle_pe(mbmixdata, SE=TRUE))
+```
+
+You can grab the SEs using the `attr()` function.
+
+```{r grab_SEs}
+attr(mle_w_SE, "SE")
+```
+
+There's also a function to derive estimated standard errors via a
+parametric bootstrap.
+
+```{r bootstrap, eval=FALSE}
+bootstrap_se <- bootstrapSE(mbmixdata, 1000)
+```
+
+```{r bootstrap_result, echo=FALSE}
+c(p = 0.000351360951177482, err = 0.0000272304773558442)
+```
+
+There are also functions to calculate the MLE of _p_ for a fixed value
+for _e_, and vice versa. They return the estimate, with the log
+likelihood as an attribute.
+
+```{r mle_p_and_mle_e}
+mle_p(mbmixdata, e=0.002)
+mle_e(mbmixdata, p=0.74)
+```
