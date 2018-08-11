@@ -25,7 +25,7 @@ errors.
 ### Installation
 
 You can install R/mbmixture from its
-[GitHub repository](https://github.com/kbroman/mixture). You first need to
+[GitHub repository](https://github.com/kbroman/mbmixture). You first need to
 install the [devtools](https://github.com/hadley/devtools) package.
 
 ```r
