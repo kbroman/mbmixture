@@ -1,0 +1,29 @@
+Package: mbmixture
+Version: 0.1-1
+Date: 2018-08-11
+Title: Microbiome mixture analysis
+Description: Evaluate whether a microbiome sample is a mixture of two
+    DNA samples, by fitting a model for the number of read counts as a
+    function of SNP allele and the genotypes of two potential source samples.
+Author: Karl W Broman <kbroman@biostat.wisc.edu>
+Maintainer: Karl W Broman <kbroman@biostat.wisc.edu>
+Depends:
+    R (>= 3.1.0)
+Imports:
+    stats,
+    parallel,
+    numDeriv
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat,
+    devtools,
+    roxygen2
+License: GPL-3
+URL: https://github.com/kbroman/mbmixture
+BugReports: https://github.com/kbroman/mbmixture/issues
+VignetteBuilder: knitr
+LazyData: true
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 6.1.0
