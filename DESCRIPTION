@@ -1,7 +1,7 @@
 Package: mbmixture
 Version: 0.1-1
 Date: 2018-08-11
-Title: Microbiome mixture analysis
+Title: Microbiome Mixture Analysis
 Description: Evaluate whether a microbiome sample is a mixture of two
     DNA samples, by fitting a model for the number of read counts as a
     function of SNP allele and the genotypes of two potential source samples.
