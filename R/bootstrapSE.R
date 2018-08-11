@@ -20,7 +20,7 @@
 #'     bootstrap results.
 #'
 #' @export
-#' @importFrom stats rmultinom setNames
+#' @importFrom stats rmultinom setNames sd
 bootstrapSE <-
     function(tab, n_rep=100, interval=c(0,1), tol=1e-6, check_boundary=FALSE, cores=0,
              return_raw=FALSE)
