@@ -19,7 +19,7 @@ Suggests:
     testthat,
     devtools,
     roxygen2
-License: GPL-3
+License: MIT + file LICENSE
 URL: https://github.com/kbroman/mbmixture
 BugReports: https://github.com/kbroman/mbmixture/issues
 VignetteBuilder: knitr
