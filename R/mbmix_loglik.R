@@ -48,3 +48,10 @@ mbmix_loglik_fixedp <-
     if(length(e) > 1) return(sapply(e, mbmix_loglik_fixedp, tab=tab, p=p))
     mbmix_loglik(tab, p, e)
 }
+
+# parameters as a leading vector
+mbmix_loglik_pe <-
+    function(theta, tab)
+{
+    mbmix_loglik(tab, theta[1], theta[2])
+}

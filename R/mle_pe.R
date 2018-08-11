@@ -43,13 +43,13 @@ mle_pe <-
     result <- c(p=phat,
                 e=out$maximum,
                 loglik=out$objective,
-                lrt_p1=2*(out$objective - loglik_p1),
-                lrt_p0=2*(out$objective - loglik_p0))
+                lrt_p0=2*(out$objective - loglik_p0),
+                lrt_p1=2*(out$objective - loglik_p1))
 
     if(SE) {
         loglik_pe <- function(theta, tab) loglik(tab, theta[1], theta[2])
 
-        d <- numDeriv::hessian(loglik_pe, result[1:2], tab=tab)
+        d <- numDeriv::hessian(mbmix_loglik_pe, result[1:2], tab=tab)
         se <- sqrt(diag(solve(-d)))
         names(se) <- c("p", "e")
         attr(result, "SE") <- se
