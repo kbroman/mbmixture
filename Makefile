@@ -1,4 +1,4 @@
-all: doc data test
+all: doc data
 .PHONY: doc data test
 
 # R_OPTS: --vanilla without --no-environ
