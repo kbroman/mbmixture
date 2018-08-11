@@ -13,5 +13,6 @@ Example dataset for mbmixture package.
 }
 \examples{
 data(mbmixdata)
+mle_pe(mbmixdata)
 }
 \keyword{datasets}

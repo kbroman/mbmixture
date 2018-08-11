@@ -19,3 +19,8 @@ The log likelihood evaluated at \code{p} and \code{e}.
 \description{
 Calculate log likelihood function for microbiome sample mixture model at particular values of \code{p} and \code{e}.
 }
+\examples{
+data(mbmixdata)
+mbmix_loglik(mbmixdata, p=0.74, e=0.002)
+
+}

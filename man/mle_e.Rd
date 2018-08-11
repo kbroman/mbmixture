@@ -24,3 +24,8 @@ A single numeric value, the MLE of \code{e}, with the log likelihood as an attri
 \description{
 Calculate the MLE of the sequencing error rate e for a fixed value of the contaminant probability p.
 }
+\examples{
+data(mbmixdata)
+mle_e(mbmixdata, p=0.74)
+
+}

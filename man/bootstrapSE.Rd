@@ -4,8 +4,8 @@
 \alias{bootstrapSE}
 \title{Bootstrap to get standard errors}
 \usage{
-bootstrapSE(tab, n_rep = 100, interval = c(0, 1), tol = 0.000001,
-  check_boundary = FALSE, cores = 0, return_raw = FALSE)
+bootstrapSE(tab, n_rep = 1000, interval = c(0, 1), tol = 0.000001,
+  check_boundary = FALSE, cores = 1, return_raw = FALSE)
 }
 \arguments{
 \item{tab}{Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.}
@@ -32,4 +32,9 @@ bootstrap results.
 }
 \description{
 Perform a parametric bootstrap to get estimated standard errors.
+}
+\examples{
+data(mbmixdata)
+\dontrun{bootstrapSE(mbmixdata, n_rep=1000)}
+
 }

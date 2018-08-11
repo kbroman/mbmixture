@@ -12,6 +12,10 @@
 #'
 #' @return A single numeric value, the MLE of `p`, with the log likelihood as an attribute.
 #'
+#' @examples
+#' data(mbmixdata)
+#' mle_p(mbmixdata, e=0.002)
+#'
 #' @export
 #' @importFrom stats optimize
 mle_p <-

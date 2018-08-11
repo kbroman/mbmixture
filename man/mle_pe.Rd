@@ -24,3 +24,8 @@ A vector containing the estimates of \code{p} and \code{e} along with the evalua
 \description{
 Find joint MLEs of p and e for microbiome mixture model
 }
+\examples{
+data(mbmixdata)
+mle_pe(mbmixdata)
+
+}

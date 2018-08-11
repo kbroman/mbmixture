@@ -12,6 +12,10 @@
 #'
 #' @return A vector containing the estimates of `p` and `e` along with the evaluated log likelihood and likelihood ratio test statistics for the hypotheses p=0 and p=1.
 #'
+#' @examples
+#' data(mbmixdata)
+#' mle_pe(mbmixdata)
+#'
 #' @export
 #' @importFrom stats optimize
 #' @importFrom numDeriv hessian

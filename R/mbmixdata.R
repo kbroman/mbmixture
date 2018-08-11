@@ -12,4 +12,5 @@
 #'
 #' @examples
 #' data(mbmixdata)
+#' mle_pe(mbmixdata)
 "mbmixdata"

@@ -8,6 +8,10 @@
 #' @param p Contaminant probability (proportion of mixture coming from the second sample).
 #' @param e Sequencing error rate.
 #'
+#' @examples
+#' data(mbmixdata)
+#' mbmix_loglik(mbmixdata, p=0.74, e=0.002)
+#'
 #' @return The log likelihood evaluated at `p` and `e`.
 #'
 #' @export

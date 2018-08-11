@@ -19,10 +19,14 @@
 #'     `return_raw=TRUE`, an matrix of size `n_rep` x 2 with the detailed
 #'     bootstrap results.
 #'
+#' @examples
+#' data(mbmixdata)
+#' \dontrun{bootstrapSE(mbmixdata, n_rep=1000)}
+#'
 #' @export
 #' @importFrom stats rmultinom setNames sd
 bootstrapSE <-
-    function(tab, n_rep=100, interval=c(0,1), tol=1e-6, check_boundary=FALSE, cores=0,
+    function(tab, n_rep=1000, interval=c(0,1), tol=1e-6, check_boundary=FALSE, cores=1,
              return_raw=FALSE)
 {
     d <- dim(tab)
