@@ -47,8 +47,6 @@ mle_pe <-
                 lrt_p1=2*(out$objective - loglik_p1))
 
     if(SE) {
-        loglik_pe <- function(theta, tab) loglik(tab, theta[1], theta[2])
-
         d <- numDeriv::hessian(mbmix_loglik_pe, result[1:2], tab=tab)
         se <- sqrt(diag(solve(-d)))
         names(se) <- c("p", "e")
