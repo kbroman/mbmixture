@@ -62,11 +62,10 @@ _e_.
 (mle <- mle_pe(mbmixdata))
 ```
 
-So for these data, the estimate of _p_ is `round(mle["p"], 2)`,
-meaning that `round(mle["p"]*100)`% of the microbiome sample came from
-the second sample (and `round(100-mle["p"]*100)`% came from the first
-sample). The estimate of the sequencing error rate is `round(mle["e"],
-3)`.
+So for these data, the estimate of _p_ is `r round(mle["p"], 2)`,
+meaning that `r round(mle["p"]*100)`% of the microbiome sample came from
+the second sample (and `r round(100-mle["p"]*100)`% came from the first
+sample). The estimate of the sequencing error rate is `r round(mle["e"], 3)`.
 
 The `mle_pe()` function also returns likelihood ratio test statistics
 (twice the natural log of the likelihood ratio) for tests of _p=0_ and
