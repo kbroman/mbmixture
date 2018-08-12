@@ -2,4 +2,4 @@
 \.gitignore$
 Makefile$
 ^\.travis\.yml$
-^docs/$
+^docs$
