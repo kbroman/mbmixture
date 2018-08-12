@@ -15,7 +15,8 @@ options(scipen=10)
 ```
 
 
-R/mbmixture is an [R](https://www.r-project.org) package for
+[R/mbmixture](https://github.com/kbroman/mbmixture)
+is an [R](https://www.r-project.org) package for
 evaluating whether a microbiome sample is the mixture of two source
 samples. We are thinking of shotgun sequencing data on the microbiome
 sample plus dense SNP genotype data on the two potential source
