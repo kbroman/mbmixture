@@ -45,8 +45,10 @@ install_github("kbroman/mbmixture", build_vignettes=TRUE)
 
 ### Vignette
 
-A vignette describing the use of the package is available from within
-R. Load the package and then use the `vignette` function.
+A vignette describing the use of the package is available
+[on the web](https://kbroman.org/mbmixture/mbmixture.html).
+Or view it from within R by load the package and then using the
+`vignette()` function.
 
 ```r
 library(mbmixture)
