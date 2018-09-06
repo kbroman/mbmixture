@@ -25,6 +25,7 @@
 #'
 #' @export
 #' @importFrom stats rmultinom setNames sd
+#' @seealso [bootstrapNull()]
 bootstrapSE <-
     function(tab, n_rep=1000, interval=c(0,1), tol=1e-6, check_boundary=FALSE, cores=1,
              return_raw=FALSE)
