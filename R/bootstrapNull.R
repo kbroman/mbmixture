@@ -14,6 +14,7 @@
 #' Alternatively, this can be links to a set of cluster sockets, as
 #' produced by [parallel::makeCluster()].
 #' @param return_raw If TRUE, return the raw results. If FALSE, just return the p-value.
+#' Unlink [bootstrapSE()], here the default is TRUE.
 #'
 #' @return If `return_raw=FALSE`, a single numeric value (the p-value).If
 #'     `return_raw=TRUE`, a vector of length `n_rep` with the LRT statistics from each
@@ -28,7 +29,7 @@
 #' @seealso [bootstrapSE()]
 bootstrapNull <-
     function(tab, n_rep=1000, interval=c(0,1), tol=1e-6, check_boundary=TRUE, cores=1,
-             return_raw=FALSE)
+             return_raw=TRUE)
 {
     d <- dim(tab)
     stopifnot(length(d) == 3, all(d == c(3,3,2)))

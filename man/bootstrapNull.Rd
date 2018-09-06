@@ -5,7 +5,7 @@
 \title{Bootstrap to assess significance}
 \usage{
 bootstrapNull(tab, n_rep = 1000, interval = c(0, 1), tol = 0.000001,
-  check_boundary = TRUE, cores = 1, return_raw = FALSE)
+  check_boundary = TRUE, cores = 1, return_raw = TRUE)
 }
 \arguments{
 \item{tab}{Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.}
@@ -23,7 +23,8 @@ bootstrapNull(tab, n_rep = 1000, interval = c(0, 1), tol = 0.000001,
 Alternatively, this can be links to a set of cluster sockets, as
 produced by \code{\link[parallel:makeCluster]{parallel::makeCluster()}}.}
 
-\item{return_raw}{If TRUE, return the raw results. If FALSE, just return the p-value.}
+\item{return_raw}{If TRUE, return the raw results. If FALSE, just return the p-value.
+Unlink \code{\link[=bootstrapSE]{bootstrapSE()}}, here the default is TRUE.}
 }
 \value{
 If \code{return_raw=FALSE}, a single numeric value (the p-value).If
