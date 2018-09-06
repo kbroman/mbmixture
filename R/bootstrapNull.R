@@ -25,7 +25,7 @@
 #' \dontrun{bootstrapNull(mbmixdata, n_rep=1000)}
 #'
 #' @export
-#' @importFrom stats rmultinom
+#' @importFrom stats rbinom setNames
 #' @seealso [bootstrapSE()]
 bootstrapNull <-
     function(tab, n_rep=1000, interval=c(0,1), tol=1e-6, check_boundary=TRUE, cores=1,
