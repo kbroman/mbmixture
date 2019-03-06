@@ -5,6 +5,7 @@ Title: Microbiome Mixture Analysis
 Description: Evaluate whether a microbiome sample is a mixture of two
     DNA samples, by fitting a model for the number of read counts as a
     function of SNP allele and the genotypes of two potential source samples.
+    Lobo et al. (2019) <doi:10.1101/529040>.
 Author: Karl W Broman <broman@wisc.edu>
 Maintainer: Karl W Broman <broman@wisc.edu>
 Depends:

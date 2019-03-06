@@ -55,6 +55,15 @@ library(mbmixture)
 vignette("mbmixture", package="mbmixture")
 ```
 
+### Citation
+
+To cite R/mbmixture in publications use:
+
+- Lobo AK, Traeger LL, Keller MP, Attie AD, Rey FE, Broman KW (2019)
+  Identification of sample mix-ups and mixtures in microbiome data in
+  Diversity Outbred mice. bioRxiv
+  [doi:10.1101/529040](https://doi.org/10.1101/529040)
+
 ---
 
 ### License
