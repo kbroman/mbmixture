@@ -2,8 +2,6 @@
 #'
 #' Calculate log likelihood function for microbiome sample mixture model at particular values of `p` and `e`.
 #'
-#' @md
-#'
 #' @param tab Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.
 #' @param p Contaminant probability (proportion of mixture coming from the second sample).
 #' @param e Sequencing error rate.

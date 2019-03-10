@@ -2,8 +2,6 @@
 #'
 #' Calculate the MLE of the sequencing error rate e for a fixed value of the contaminant probability p.
 #'
-#' @md
-#'
 #' @param tab Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.
 #' @param p Assumed value for the contaminant probability
 #' @param interval Interval to which each parameter should be constrained

@@ -2,8 +2,6 @@
 #'
 #' Find joint MLEs of p and e for microbiome mixture model
 #'
-#' @md
-#'
 #' @param tab Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.
 #' @param interval Interval to which each parameter should be constrained
 #' @param tol Tolerance for convergence

@@ -1,3 +1,8 @@
+## mbmixture 0.2-2 (2019-03-10)
+
+- Use Markdown for function documentation, throughout
+
+
 ## mbmixture 0.2-1 (2018-09-06)
 
 - Added function `bootstrapNull()` which is like `bootstrapSE()` but

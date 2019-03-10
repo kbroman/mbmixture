@@ -1,6 +1,6 @@
 Package: mbmixture
-Version: 0.2-1
-Date: 2018-09-06
+Version: 0.2-2
+Date: 2019-03-10
 Title: Microbiome Mixture Analysis
 Description: Evaluate whether a microbiome sample is a mixture of two
     DNA samples, by fitting a model for the number of read counts as a
@@ -27,4 +27,5 @@ VignetteBuilder: knitr
 LazyData: true
 Encoding: UTF-8
 ByteCompile: true
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
+Roxygen: list(markdown=TRUE)

@@ -2,8 +2,6 @@
 #'
 #' Perform a parametric bootstrap to get estimated standard errors.
 #'
-#' @md
-#'
 #' @param tab Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.
 #' @param n_rep Number of bootstrap replicates
 #' @param interval Interval to which each parameter should be constrained
