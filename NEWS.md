@@ -1,3 +1,9 @@
+## mbmixture 0.2-3 (2019-12-07)
+
+- Fix use of `class()`, with `inherits(object, "blah")` rather than
+  `"blah" %in% class(object)`.
+
+
 ## mbmixture 0.2-2 (2019-03-10)
 
 - Use Markdown for function documentation, throughout
