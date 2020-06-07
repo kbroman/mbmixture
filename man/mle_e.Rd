@@ -4,8 +4,13 @@
 \alias{mle_e}
 \title{MLE of e for fixed p}
 \usage{
-mle_e(tab, p = 0.05, interval = c(0, 1), tol = 0.000001,
-  check_boundary = FALSE)
+mle_e(
+  tab,
+  p = 0.05,
+  interval = c(0, 1),
+  tol = 0.000001,
+  check_boundary = FALSE
+)
 }
 \arguments{
 \item{tab}{Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.}

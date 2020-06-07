@@ -4,8 +4,13 @@
 \alias{mle_pe}
 \title{Find MLEs for microbiome mixture}
 \usage{
-mle_pe(tab, interval = c(0, 1), tol = 0.000001,
-  check_boundary = FALSE, SE = FALSE)
+mle_pe(
+  tab,
+  interval = c(0, 1),
+  tol = 0.000001,
+  check_boundary = FALSE,
+  SE = FALSE
+)
 }
 \arguments{
 \item{tab}{Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.}

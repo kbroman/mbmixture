@@ -4,7 +4,9 @@
 \name{mbmixdata}
 \alias{mbmixdata}
 \title{Example dataset for mbmixture package}
-\format{Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.}
+\format{
+Dataset of read counts as 3d array of size 3x3x2, genotype in first sample x genotype in second sample x allele in read.
+}
 \usage{
 data(mbmixdata)
 }
