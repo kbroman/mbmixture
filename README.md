@@ -26,14 +26,14 @@ errors.
 
 You can install R/mbmixture from its
 [GitHub repository](https://github.com/kbroman/mbmixture). You first need to
-install the [devtools](https://github.com/hadley/devtools) package.
+install the [devtools](https://github.com/r-lib/devtools) package.
 
 ```r
 install.packages("devtools")
 ```
 
 Then install R/mbmixture using the `install_github` function in the
-[devtools](https://github.com/hadley/devtools) package. (With
+[devtools](https://github.com/r-lib/devtools) package. (With
 `build_vignettes=TRUE`, the vignette will be built and installed.)
 
 ```r
