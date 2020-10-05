@@ -1,3 +1,8 @@
+## mbmixture 0.2-4 (2020-10-05)
+
+- Submitted to [CRAN](https://cran.r-project.org)
+
+
 ## mbmixture 0.2-3 (2019-12-07)
 
 - Fix use of `class()`, with `inherits(object, "blah")` rather than
@@ -6,7 +11,7 @@
 
 ## mbmixture 0.2-2 (2019-03-10)
 
-- Use Markdown for function documentation, throughout
+- Use Markdown for function documentation, throughout.
 
 
 ## mbmixture 0.2-1 (2018-09-06)
