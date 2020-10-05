@@ -19,7 +19,8 @@
 #'
 #' @examples
 #' data(mbmixdata)
-#' \dontrun{bootstrapSE(mbmixdata, n_rep=1000)}
+#' # just 100 bootstrap replicates, as an illustration
+#' bootstrapSE(mbmixdata, n_rep=100)
 #'
 #' @export
 #' @importFrom stats rmultinom setNames sd

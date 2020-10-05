@@ -43,7 +43,8 @@ Perform a parametric bootstrap to assess whether there is significant evidence t
 }
 \examples{
 data(mbmixdata)
-\dontrun{bootstrapNull(mbmixdata, n_rep=1000)}
+# just 100 bootstrap replicates, as an illustration
+bootstrapNull(mbmixdata, n_rep=100)
 
 }
 \seealso{

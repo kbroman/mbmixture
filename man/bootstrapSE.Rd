@@ -42,7 +42,8 @@ Perform a parametric bootstrap to get estimated standard errors.
 }
 \examples{
 data(mbmixdata)
-\dontrun{bootstrapSE(mbmixdata, n_rep=1000)}
+# just 100 bootstrap replicates, as an illustration
+bootstrapSE(mbmixdata, n_rep=100)
 
 }
 \seealso{
