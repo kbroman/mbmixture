@@ -11,6 +11,7 @@ vignette: >
 library(knitr)
 opts_chunk$set(fig.width=7, fig.height=4.5,
                dev.args=list(pointsize=16))
+scipen <- options("scipen")
 options(scipen=10)
 ```
 
@@ -103,4 +104,8 @@ likelihood as an attribute.
 ```{r mle_p_and_mle_e}
 mle_p(mbmixdata, e=0.002)
 mle_e(mbmixdata, p=0.74)
+```
+
+```{r reset_options, echo=FALSE}
+options(scipen=scipen)
 ```

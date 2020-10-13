@@ -1,6 +1,6 @@
-## mbmixture 0.2-4 (2020-10-05)
+## mbmixture 0.2-5 (2020-10-13)
 
-- Submitted to [CRAN](https://cran.r-project.org)
+- Minor revisions for submission to [CRAN](https://cran.r-project.org)
 
 
 ## mbmixture 0.2-3 (2019-12-07)
