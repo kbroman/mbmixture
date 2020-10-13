@@ -1,6 +1,7 @@
 ## [R/mbmixture](https://github.com/kbroman/mbmixture)
 
 [![Build Status](https://travis-ci.org/kbroman/mbmixture.svg?branch=master)](https://travis-ci.org/kbroman/mbmixture)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/mbmixture)](https://cran.r-project.org/package=mbmixture)
 
 [Karl W Broman](https://kbroman.org)
 
@@ -24,21 +25,10 @@ errors.
 
 ### Installation
 
-You can install R/mbmixture from its
-[GitHub repository](https://github.com/kbroman/mbmixture). You first need to
-install the [devtools](https://github.com/r-lib/devtools) package.
+You can install R/mbmixture from [CRAN](https://cran.r-project.org):
 
 ```r
-install.packages("devtools")
-```
-
-Then install R/mbmixture using the `install_github` function in the
-[devtools](https://github.com/r-lib/devtools) package. (With
-`build_vignettes=TRUE`, the vignette will be built and installed.)
-
-```r
-library(devtools)
-install_github("kbroman/mbmixture", build_vignettes=TRUE)
+install.packages("mbmixture")
 ```
 
 ---
