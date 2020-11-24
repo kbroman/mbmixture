@@ -1,6 +1,6 @@
 ^\.git$
 \.gitignore$
 Makefile$
-^\.travis\.yml$
 ^docs$
 ^LICENSE\.md$
+^\.github$

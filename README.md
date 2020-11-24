@@ -1,6 +1,6 @@
 ## [R/mbmixture](https://github.com/kbroman/mbmixture)
 
-[![Build Status](https://travis-ci.org/kbroman/mbmixture.svg?branch=master)](https://travis-ci.org/kbroman/mbmixture)
+[![R build status](https://github.com/kbroman/mbmixture/workflows/R-CMD-check/badge.svg)](https://github.com/kbroman/mbmixture/actions)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/mbmixture)](https://cran.r-project.org/package=mbmixture)
 
 [Karl W Broman](https://kbroman.org)
