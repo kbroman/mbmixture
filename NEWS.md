@@ -1,3 +1,8 @@
+## mbmixture 0.2-6 (2023-02-20)
+
+- Update reference in README, DESCRIPTION, and CITATION files.
+
+
 ## mbmixture 0.2-5 (2020-10-13)
 
 - Minor revisions for submission to [CRAN](https://cran.r-project.org)

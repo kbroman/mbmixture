@@ -1,12 +1,12 @@
 Package: mbmixture
-Version: 0.2-5
-Date: 2020-10-13
+Version: 0.2-6
+Date: 2023-02-20
 Title: Microbiome Mixture Analysis
 Description: Evaluate whether a microbiome sample is a mixture of two
     samples, by fitting a model for the number of read counts as a
     function of single nucleotide polymorphism (SNP) allele and the
     genotypes of two potential source samples.
-    Lobo et al. (2019) <doi:10.1101/529040>.
+    Lobo et al. (2021) <doi:10.1093/g3journal/jkab308>.
 Author: Karl W Broman [aut, cre] (<https://orcid.org/0000-0002-4914-6671>)
 Maintainer: Karl W Broman <broman@wisc.edu>
 Authors@R: c(person("Karl W", "Broman", role=c("aut", "cre"),
@@ -30,5 +30,5 @@ VignetteBuilder: knitr
 LazyData: true
 Encoding: UTF-8
 ByteCompile: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Roxygen: list(markdown=TRUE)

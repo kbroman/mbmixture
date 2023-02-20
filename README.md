@@ -20,7 +20,6 @@ We fit a model with contaminant probability _p_ = proportion of the
 microbiome sample coming from the second sample and _e_ = rate of sequencing
 errors.
 
-
 ---
 
 ### Installation
@@ -49,10 +48,11 @@ vignette("mbmixture", package="mbmixture")
 
 To cite R/mbmixture in publications use:
 
-- Lobo AK, Traeger LL, Keller MP, Attie AD, Rey FE, Broman KW (2019)
+- Lobo AK, Traeger LL, Keller MP, Attie AD, Rey FE, Broman KW (2021)
   Identification of sample mix-ups and mixtures in microbiome data in
-  Diversity Outbred mice. bioRxiv
-  [doi:10.1101/529040](https://doi.org/10.1101/529040)
+  Diversity Outbred mice. G3 (Bethesda) 11:jkab308
+  [doi: 10.1093/g3journal/jkab308](https://doi.org/10.1093/g3journal/jkab308)
+
 
 ---
 

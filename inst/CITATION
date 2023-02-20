@@ -1,6 +1,6 @@
 citHeader("To cite R/mbmixture in publications use:")
 
-citEntry(entry="article",
+bibentry(bibtype="article",
          title = "Identification of sample mix-ups and mixtures in microbiome data in {D}iversity {O}utbred mice",
          author = personList(person(c("Alexandra", "K."), "Lobo"),
                              person(c("Lindsay", "L."), "Traeger"),
@@ -8,15 +8,15 @@ citEntry(entry="article",
                              person(c("Alan", "D."), "Attie"),
                              person(c("Federico", "E."), "Rey"),
                              person(c("Karl", "W."), "Broman")),
-         journal = "bioRxiv",
-         year = 2019,
-         doi = "10.1101/529040",
-         url = "https://doi.org/10.1101/529040",
-         eprint = "https://www.biorxiv.org/content/biorxiv/early/2019/01/23/529040.full.pdf",
-         key = "Lobo2019",
+         journal = "G3 (Bethesda)",
+         year = 2021,
+         doi = "10.1093/g3journal/jkab308",
+         url = "https://doi.org/10.1093/g3journal/jkab308",
+         eprint = "https://academic.oup.com/g3journal/article-pdf/11/11/jkab308/40770295/jkab308.pdf",
+         key = "Lobo2021",
 
          textVersion =
-             paste("Lobo AK, Traeger LL, Keller MP, Attie AD, Rey FE, Broman KW (2019)",
+             paste("Lobo AK, Traeger LL, Keller MP, Attie AD, Rey FE, Broman KW (2021)",
                    "Identification of sample mix-ups and mixtures in microbiome data in",
-                   "Diversity Outbred mice. bioRxiv doi:10.1101/529040")
+                   "Diversity Outbred mice. G3 (Bethesda) 11:jkab308")
          )
