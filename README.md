@@ -2,6 +2,7 @@
 
 [![R build status](https://github.com/kbroman/mbmixture/workflows/R-CMD-check/badge.svg)](https://github.com/kbroman/mbmixture/actions)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/mbmixture)](https://cran.r-project.org/package=mbmixture)
+[![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4067048.svg)](https://doi.org/10.5281/zenodo.4067048)
 
 [Karl W Broman](https://kbroman.org)
 
