@@ -1,4 +1,4 @@
-## mbmixture 0.2-6 (2023-02-20)
+## mbmixture 0.4 (2023-04-27)
 
 - Update reference in README, DESCRIPTION, and CITATION files.
 
