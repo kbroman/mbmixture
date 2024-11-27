@@ -1,6 +1,6 @@
 Package: mbmixture
-Version: 0.4
-Date: 2023-04-27
+Version: 0.6
+Date: 2024-11-27
 Title: Microbiome Mixture Analysis
 Description: Evaluate whether a microbiome sample is a mixture of two
     samples, by fitting a model for the number of read counts as a

@@ -1,3 +1,8 @@
+## mbmixture 0.6 (2024-11-27)
+
+- Fix error in vignette.
+
+
 ## mbmixture 0.4 (2023-04-27)
 
 - Update reference in README, DESCRIPTION, and CITATION files.

@@ -11,7 +11,7 @@ vignette: >
 library(knitr)
 opts_chunk$set(fig.width=7, fig.height=4.5,
                dev.args=list(pointsize=16))
-scipen <- options("scipen")
+scipen <- getOption("scipen")
 options(scipen=10)
 ```
 
